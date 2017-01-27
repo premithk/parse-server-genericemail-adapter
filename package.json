@@ -1,0 +1,23 @@
+{
+  "name": "parse-server-genericemail-adapter",
+  "version": "0.0.1",
+  "description": "Parse mail extension to send emails using generic accounts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "parse",
+    "server",
+    "amazon",
+    "ses",
+    "mail",
+    "email",
+    "adapter"
+  ],
+  "author": "Premith, premith@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^2.7.2"
+  }
+}
