@@ -23,5 +23,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/premithk/parse-server-genericemail-adapter.git"
-  }
+  },
+  "readme": "README.md"
 }
