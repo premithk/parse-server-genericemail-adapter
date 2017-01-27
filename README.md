@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/parse-server-genericemail-adapter.svg)](https://badge.fury.io/js/parse-server-genericemail-adapter)
 # Parse Server Generic email Adapter
 Used to send Parse Server password reset and email verification emails with generic accounts like Gmail. This module uses the nodemailer library.
 
