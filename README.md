@@ -1,5 +1,5 @@
 # Parse Server Generic email Adapter
-Used to send Parse Server password reset and email verification emails with generic accounts like Gmail uses the nodemailer library.
+Used to send Parse Server password reset and email verification emails with generic accounts like Gmail. This module uses the nodemailer library.
 
 Read more here: https://github.com/ParsePlatform/parse-server.
 
@@ -21,9 +21,14 @@ var parse=new ParseServer({
    emailAdapter: {
       module: "parse-server-genericemail-adapter",
       options: {
-         email: "email@.gmailcom",
+         service: "Gmail" // Could be anything like yahoo, hotmail, etc, Full list - https://github.com/nodemailer/nodemailer-wellknown 
+         email: "email@.gmail.com",
          password: "Your password"  //Hmm right now no other way
       }
    }
 });
 ```
+## Credits
+https://github.com/collinbrewer/parse-server-amazon-ses-adapter
+https://github.com/nodemailer/nodemailer
+https://github.com/ParsePlatform/parse-server
