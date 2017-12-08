@@ -1,34 +1,34 @@
 [![npm version](https://badge.fury.io/js/parse-server-genericemail-adapter.svg)](https://badge.fury.io/js/parse-server-genericemail-adapter)
-# Parse Server Generic email Adapter
+# Parse Server Generic Email Adapter
 
 
-This is a parse-server email adapter that will route all the emails send by the parse-server through general email providers like gmail, yahoo etc. Emails can include reset password, verification emails as well as custom emails sent through cloud code.
+This is a parse server email adapter that will route all emails sent by parse server through general email providers, like gmail, yahoo etc. Emails can include password resets, verification emails and custom emails sent through cloud code.
 
-Read more here: https://github.com/ParsePlatform/parse-server.
+Read more here: https://github.com/parse-community/parse-server.
 
 ## Compatibility
 Tested with Parse Server v2.7.0
 
 ## Installation
 ```sh
-$ npm install parse-server-genericemail-adapter  -S
+$ npm install parse-server-genericemail-adapter --save
 ```
 
 ## Usage
-In the configuration of your parse server you must pass parse-server-genericemail-adapter as email adapter and set your service name (eg: Gmail), the email id and the password. 
+In the configuration of your parse server you must pass **parse-server-genericemail-adapter** as your email adapter. You must also set your service name (eg: Gmail) along with the email id and password. 
 
-This is an example using parse server as express module:
+This is an example using parse server as an express module:
 
 
 ```javascript
-var parse=new ParseServer({
+var parse = new ParseServer({
    //...
    emailAdapter: {
       module: "parse-server-genericemail-adapter",
       options: {
          service: "Gmail" // Could be anything like yahoo, hotmail, etc, Full list - see below 
          email: "email@.gmail.com",
-         password: "Your password"  //Hmm right now no other way
+         password: "Your password"
       }
    }
 });
@@ -83,7 +83,7 @@ https://github.com/collinbrewer/parse-server-amazon-ses-adapter
 
 https://github.com/nodemailer/nodemailer
 
-https://github.com/ParsePlatform/parse-server
+https://github.com/parse-community/parse-server
 
 ## License MIT
 
