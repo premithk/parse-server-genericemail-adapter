@@ -11,7 +11,7 @@ Tested with Parse Server v2.7.0
 
 ## Installation
 ```sh
-$ npm install parse-server-genericemail-adapter --save
+$ npm install --save parse-server-genericemail-adapter
 ```
 
 ## Usage
