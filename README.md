@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/parse-server-genericemail-adapter.svg)](https://badge.fury.io/js/parse-server-genericemail-adapter)
+[![npm version](https://badge.fury.io/js/parse-server-genericemail-adapter.svg)](https://badge.fury.io/js/parse-server-generic-email-adapter)
 # Parse Server Generic Email Adapter
 
 
@@ -11,11 +11,11 @@ Tested with Parse Server v2.7.0
 
 ## Installation
 ```sh
-$ npm install --save parse-server-genericemail-adapter
+$ npm install --save parse-server-generic-email-adapter
 ```
 
 ## Usage
-In the configuration of your parse server you must pass **parse-server-genericemail-adapter** as your email adapter. You must also set your service name (eg: Gmail) along with the email id and password. 
+In the configuration of your parse server you must pass **parse-server-generic-email-adapter** as your email adapter. You must also set your service name (eg: Gmail) along with the email id and password. 
 
 This is an example using parse server as an express module:
 
@@ -24,7 +24,7 @@ This is an example using parse server as an express module:
 var parse = new ParseServer({
    //...
    emailAdapter: {
-      module: "parse-server-genericemail-adapter",
+      module: "parse-server-generic-email-adapter",
       options: {
          service: "Gmail" // Could be anything like yahoo, hotmail, etc, Full list - see below 
          email: "email@.gmail.com",
