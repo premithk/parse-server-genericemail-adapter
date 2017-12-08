@@ -1,6 +1,6 @@
 {
-  "name": "parse-server-genericemail-adapter",
-  "version": "0.0.3",
+  "name": "parse-server-generic-email-adapter",
+  "version": "0.0.4",
   "description": "Parse mail extension to send emails using generic accounts",
   "main": "index.js",
   "scripts": {
