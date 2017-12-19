@@ -26,7 +26,7 @@ var parse = new ParseServer({
    emailAdapter: {
       module: "parse-server-generic-email-adapter",
       options: {
-         service: "Gmail" // Could be anything like yahoo, hotmail, etc, Full list - see below 
+         service: "Gmail", // Could be anything like yahoo, hotmail, etc, Full list - see below 
          email: "email@gmail.com",
          password: "Your password"
       }
