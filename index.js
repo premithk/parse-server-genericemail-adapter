@@ -18,7 +18,8 @@ module.exports = function (options) {
                 from: options.from, // sender address
                 to: [mail.to], // list of receivers
                 subject: mail.subject, // Subject line
-                text: mail.text //, // plaintext body
+                text: mail.text, //, // plaintext body
+                html:mail.html
             };
 
             transporter.sendMail(mailOptions, function (error, info) {
